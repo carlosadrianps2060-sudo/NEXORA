@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Nexora diseña, implementa y mantiene centros de ayuda virtuales personalizados para pequeños negocios.">
+    <meta name="keywords"
+        content="Nexora, centro de ayuda virtual, atención al cliente, pequeños negocios, automatización">
+    <meta name="author" content="NEXORA">
+
+    <title>Nexora | Centros de ayuda virtual</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#centro-ayuda" aria-label="Ir al inicio">
+                    HELP<span>PLANT</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#centro-ayuda">Centro de ayuda</a></li>
+                <li><a href="#catalogo-info">Información</a></li>
+                <li><a href="#pqrs">PQRS</a></li>
+                <li><a href="#nexora">Nexora</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#demo">Demostración</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO / INICIO
+        ====================================================== -->
+
+        <section id="centro-ayuda" class="hero customer-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-label">CENTRO DE AYUDA · VIVERO DEMOSTRATIVO</p>
+                <h1>Todo lo que necesitas saber sobre <span>nuestro vivero.</span></h1>
+                <p class="hero-description">
+                    Consulta información sobre plantas, productos, cuidados, horarios y domicilios.
+                    Si necesitas una respuesta más específica, utiliza el asistente virtual.
+                </p>
+                <div class="customer-search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="helpSearch" type="search" placeholder="¿Qué información estás buscando?" aria-label="Buscar información en el centro de ayuda">
+                    <a href="#preguntas">Buscar</a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#catalogo-info" class="btn btn-primary">Explorar información</a>
+                    <a href="#pqrs" class="btn btn-secondary">Atención al cliente</a>
+                </div>
+                <div class="hero-note"><span class="status-dot"></span><p>Centro de ayuda demostrativo disponible</p></div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             PRESENTACIÓN
+        ====================================================== -->
+
+        <!-- CENTRO DE AYUDA DEL NEGOCIO DEMOSTRATIVO -->
+        <section id="catalogo-info" class="section customer-info-section">
+            <div class="section-title">
+                <p>INFORMACIÓN DEL NEGOCIO</p>
+                <h2>Encuentra respuestas antes de comprar</h2>
+                <span>Este espacio representa la información que un negocio contratante puede ofrecer a sus propios clientes.</span>
+            </div>
+            <div class="customer-info-grid">
+                <article class="customer-info-card"><span>🌿</span><h3>Plantas y productos</h3><p>Consulta plantas de interior, orquídeas, cactus, suculentas, plantas ornamentales, macetas, sustratos y fertilizantes.</p></article>
+                <article class="customer-info-card"><span>🪴</span><h3>Cuidados y recomendaciones</h3><p>Pregunta por riego, iluminación, ubicación y recomendaciones generales para cuidar tus plantas.</p></article>
+                <article class="customer-info-card"><span>🕘</span><h3>Horarios de atención</h3><p>Lunes a sábado, de 9:00 a. m. a 7:00 p. m. (dato de esta demostración).</p></article>
+                <article class="customer-info-card"><span>🚚</span><h3>Domicilios</h3><p>Disponibles en Medellín y algunas zonas cercanas. El costo depende de la zona de entrega.</p></article>
+            </div>
+            <p class="demo-disclaimer">Aviso: el vivero y sus datos son ficticios y se utilizan únicamente para mostrar cómo funcionaría un centro de ayuda personalizado.</p>
+        </section>
+
+        <section id="preguntas" class="section section-light customer-faq-section">
+            <div class="section-title">
+                <p>CONSULTAS FRECUENTES</p>
+                <h2>¿Qué te gustaría saber?</h2>
+                <span>Busca una palabra clave o abre el asistente virtual para consultar información del vivero.</span>
+            </div>
+            <div class="faq-search-results" id="faqSearchResults" aria-live="polite"></div>
+            <div class="customer-faq-grid" id="customerFaqGrid">
+                <article class="customer-faq-card"><h3>¿Qué tipos de plantas ofrecen?</h3><p>La demostración incluye plantas de interior, orquídeas, cactus, suculentas y plantas ornamentales.</p></article>
+                <article class="customer-faq-card"><h3>¿Tienen macetas y fertilizantes?</h3><p>Sí. El catálogo demostrativo también contempla macetas, sustratos y fertilizantes.</p></article>
+                <article class="customer-faq-card"><h3>¿Cuál es el horario?</h3><p>El horario configurado para este ejemplo es de lunes a sábado, de 9:00 a. m. a 7:00 p. m.</p></article>
+                <article class="customer-faq-card"><h3>¿Realizan domicilios?</h3><p>La demostración contempla domicilios en Medellín y algunas zonas cercanas. El costo depende de la zona.</p></article>
+                <article class="customer-faq-card"><h3>¿Puedo consultar precios?</h3><p>Sí. El asistente virtual puede responder sobre los precios que se hayan registrado en el catálogo del negocio.</p></article>
+                <article class="customer-faq-card"><h3>¿Cómo recibo recomendaciones?</h3><p>Abre el chat de asistencia y pregunta por los cuidados o características de la planta que te interesa.</p></article>
+            </div>
+            <div class="assistant-callout"><div><strong>¿No encuentras lo que buscas?</strong><p>El asistente virtual puede ayudarte a consultar la información configurada para este vivero.</p></div><span>💬 Prueba el chat de Gosto</span></div>
+        </section>
+
+        <section id="pqrs" class="section customer-pqrs-section">
+            <div class="section-title">
+                <p>ATENCIÓN Y PQRS</p>
+                <h2>Cada solicitud llega al responsable correcto</h2>
+                <span>Separamos la atención de los compradores del soporte de los negocios que contratan la plataforma.</span>
+            </div>
+            <div class="pqrs-routing-grid">
+                <article class="pqrs-routing-card"><span class="pqrs-tag">COMPRADORES DEL VIVERO</span><h3>Solicitudes sobre compras y productos</h3><p>Preguntas, peticiones, quejas o reclamos relacionados con plantas, precios, pedidos, domicilios o atención comercial corresponden al vivero.</p></article>
+                <article class="pqrs-routing-card"><span class="pqrs-tag nexora-tag">NEGOCIOS CLIENTES DE NEXORA</span><h3>Soporte del centro de ayuda</h3><p>Los negocios que contratan Nexora pueden solicitar ayuda por fallas técnicas, actualizaciones, mantenimiento o funcionamiento del centro de ayuda.</p><a href="#contacto" class="service-link">Contactar a Nexora →</a></article>
+            </div>
+            <p class="demo-disclaimer">Esta página es una demostración académica: no recibe ni radica PQRS reales. En una implementación, los canales y datos de contacto se configuran con cada negocio.</p>
+        </section>
+
+        <section class="section introduction">
+
+            <div class="section-title">
+
+                <p>LA IDEA</p>
+
+                <h2>
+                    ¿Qué problema solucionamos?
+                </h2>
+
+                <span>
+                    Una atención organizada permite que los negocios
+                    aprovechen mejor su tiempo.
+                </span>
+
+            </div>
+
+
+            <div class="problem-grid">
+
+                <article class="problem-card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Preguntas repetitivas
+                    </h3>
+
+                    <p>
+                        Muchos negocios reciben constantemente las mismas
+                        preguntas sobre horarios, productos, servicios,
+                        precios y disponibilidad.
+                    </p>
+
+                </article>
+
+
+                <article class="problem-card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Tiempo de atención
+                    </h3>
+
+                    <p>
+                        Responder manualmente las mismas consultas puede
+                        ocupar tiempo que el negocio podría dedicar a
+                        otras actividades.
+                    </p>
+
+                </article>
+
+
+                <article class="problem-card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Información dispersa
+                    </h3>
+
+                    <p>
+                        Los clientes pueden tener dificultades para encontrar
+                        rápidamente la información que necesitan.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             NOSOTROS
+        ====================================================== -->
+
+        <section id="nexora" class="section section-dark">
+
+            <div class="section-title">
+
+                <p>CONÓCENOS</p>
+
+                <h2>
+                    ¿Qué es Nexora?
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p class="about-highlight">
+                        Una solución tecnológica pensada para pequeños
+                        negocios y emprendimientos.
+                    </p>
+
+                    <p>
+                        NEXORA es una propuesta tecnológica dedicada al
+                        diseño, desarrollo e implementación de centros de
+                        ayuda virtual personalizados para empresas y
+                        pequeños negocios.
+                    </p>
+
+                    <p>
+                        Nuestro propósito es facilitar la atención al cliente
+                        mediante respuestas rápidas y organizadas a preguntas
+                        frecuentes sobre productos, servicios, horarios,
+                        precios y disponibilidad.
+                    </p>
+
+                    <p>
+                        Cada centro de ayuda se adapta a la información y
+                        necesidades del negocio que contrata el servicio.
+                    </p>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <div class="about-icon">
+                        +
+                    </div>
+
+                    <h3>
+                        Personalización
+                    </h3>
+
+                    <p>
+                        La información del centro de ayuda se configura de
+                        acuerdo con las necesidades del negocio.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICIOS
+        ====================================================== -->
+
+        <section id="servicios" class="section section-light">
+
+            <div class="section-title">
+
+                <p>LO QUE OFRECEMOS</p>
+
+                <h2>
+                    Nuestros servicios
+                </h2>
+
+                <span>
+                    El negocio puede elegir la modalidad que mejor se adapte
+                    a sus necesidades.
+                </span>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <!-- SERVICIO 01 -->
+
+                <article class="service-card">
+
+                    <div class="service-top">
+
+                        <span class="service-number">
+                            01
+                        </span>
+
+                        <span class="service-tag">
+                            IMPLEMENTACIÓN
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Creación del centro
+                    </h3>
+
+                    <p>
+                        Diseñamos y desarrollamos un centro de ayuda virtual
+                        personalizado de acuerdo con la información y las
+                        necesidades del negocio.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            ✓ Configuración inicial
+                        </li>
+
+                        <li>
+                            ✓ Organización de información
+                        </li>
+
+                        <li>
+                            ✓ Preguntas frecuentes
+                        </li>
+
+                        <li>
+                            ✓ Implementación del centro
+                        </li>
+
+                    </ul>
+
+                    <a href="#contacto" class="service-link">
+                        Solicitar información →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICIO 02 -->
+
+                <article class="service-card">
+
+                    <div class="service-top">
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                        <span class="service-tag">
+                            SOPORTE
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Mantenimiento
+                    </h3>
+
+                    <p>
+                        Actualizamos y mantenemos la información disponible
+                        en el centro de ayuda para que continúe siendo útil
+                        para los clientes.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            ✓ Actualización de información
+                        </li>
+
+                        <li>
+                            ✓ Cambios solicitados
+                        </li>
+
+                        <li>
+                            ✓ Revisión del centro
+                        </li>
+
+                        <li>
+                            ✓ Soporte remoto
+                        </li>
+
+                    </ul>
+
+                    <a href="#contacto" class="service-link">
+                        Solicitar información →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICIO 03 -->
+
+                <article class="service-card service-featured">
+
+                    <div class="service-top">
+
+                        <span class="service-number">
+                            03
+                        </span>
+
+                        <span class="service-tag">
+                            RECOMENDADO
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Creación + primer mes
+                    </h3>
+
+                    <p>
+                        Incluye el desarrollo del centro de ayuda y el
+                        acompañamiento y mantenimiento durante el primer mes.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            ✓ Creación del centro
+                        </li>
+
+                        <li>
+                            ✓ Configuración inicial
+                        </li>
+
+                        <li>
+                            ✓ Acompañamiento
+                        </li>
+
+                        <li>
+                            ✓ Mantenimiento durante el primer mes
+                        </li>
+
+                    </ul>
+
+                    <a href="#contacto" class="service-link">
+                        Solicitar información →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CÓMO FUNCIONA
+        ====================================================== -->
+
+        <section id="funciona" class="section">
+
+            <div class="section-title">
+
+                <p>PROCESO</p>
+
+                <h2>
+                    ¿Cómo funciona?
+                </h2>
+
+                <span>
+                    Desde el primer contacto hasta la implementación
+                    del centro de ayuda.
+                </span>
+
+            </div>
+
+
+            <div class="process-container">
+
+                <article class="process-step">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Contacto
+                        </h3>
+
+                        <p>
+                            El negocio se comunica con NEXORA y solicita
+                            información sobre el servicio.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="process-step">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Recopilación
+                        </h3>
+
+                        <p>
+                            Se recopila la información necesaria sobre
+                            productos, servicios, horarios y preguntas
+                            frecuentes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="process-step">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Creación
+                        </h3>
+
+                        <p>
+                            NEXORA desarrolla y configura el centro
+                            de ayuda de acuerdo con las necesidades
+                            del negocio.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="process-step">
+
+                    <span class="process-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Implementación
+                        </h3>
+
+                        <p>
+                            El centro de ayuda queda disponible para que
+                            el negocio pueda compartirlo con sus clientes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="process-step">
+
+                    <span class="process-number">
+                        05
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Mantenimiento
+                        </h3>
+
+                        <p>
+                            Cuando se contrata este servicio, se realizan
+                            actualizaciones y mantenimiento de la información.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FLUJO DEL SERVICIO
+        ====================================================== -->
+
+        <section class="section section-light">
+
+            <div class="section-title">
+
+                <p>ASÍ FUNCIONA</p>
+
+                <h2>
+                    Del negocio al cliente
+                </h2>
+
+                <span>
+                    El centro de ayuda se convierte en un punto de
+                    atención digital para los clientes del negocio.
+                </span>
+
+            </div>
+
+
+            <div class="flow-container">
+
+                <div class="flow-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        Negocio
+                    </strong>
+
+                    <p>
+                        Contrata el servicio.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        NEXORA
+                    </strong>
+
+                    <p>
+                        Crea y configura el centro.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        Enlace
+                    </strong>
+
+                    <p>
+                        El negocio comparte el acceso.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong>
+                        Cliente
+                    </strong>
+
+                    <p>
+                        Consulta información.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        05
+                    </span>
+
+                    <strong>
+                        Respuesta
+                    </strong>
+
+                    <p>
+                        El centro atiende la consulta.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DEMOSTRACIÓN
+        ====================================================== -->
+
+        <section id="demo" class="section demo-section">
+
+            <div class="section-title">
+
+                <p>DEMOSTRACIÓN</p>
+
+                <h2>
+                    Mira cómo funciona el servicio
+                </h2>
+
+                <span>
+                    Este vivero es un ejemplo ficticio del centro de ayuda que Nexora puede implementar para un negocio.
+                </span>
+
+            </div>
+
+
+            <div class="demo-container">
+
+                <div class="demo-info">
+
+                    <span class="demo-label">
+                        PROYECTO DEMOSTRATIVO
+                    </span>
+
+                    <h3>
+                        Centro de ayuda para un vivero
+                    </h3>
+
+                    <p>
+                        Para demostrar nuestro servicio, desarrollamos un
+                        ejemplo de centro de ayuda virtual para un vivero.
+                    </p>
+
+                    <p>
+                        El cliente del vivero podría ingresar desde cualquier
+                        navegador y consultar información disponible sobre
+                        el negocio.
+                    </p>
+
+
+                    <div class="demo-data">
+
+                        <div class="demo-data-item">
+
+                            <span>
+                                HORARIO
+                            </span>
+
+                            <strong>
+                                Lunes a sábado
+                            </strong>
+
+                            <small>
+                                9:00 a. m. – 7:00 p. m.
+                            </small>
+
+                        </div>
+
+
+                        <div class="demo-data-item">
+
+                            <span>
+                                DOMICILIOS
+                            </span>
+
+                            <strong>
+                                Disponible
+                            </strong>
+
+                            <small>
+                                Medellín y algunas zonas cercanas. Costo según zona.
+                            </small>
+
+                        </div>
+
+
+                        <div class="demo-data-item">
+
+                            <span>
+                                PRODUCTOS
+                            </span>
+
+                            <strong>
+                                41 productos
+                            </strong>
+
+                            <small>
+                                Plantas, macetas, sustratos y fertilizantes.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="demo-catalog-note">
+
+                        <strong>📋 Catálogo configurado</strong>
+
+                        <p>
+                            El asistente ya cuenta con información de productos,
+                            precios y disponibilidad para esta demostración.
+                        </p>
+
+                    </div>
+
+
+                    <div class="demo-instruction">
+
+                        <strong>
+                            💬 Prueba el asistente
+                        </strong>
+
+                        <p>
+                            Abre el chat de Gosto que aparece en la página y
+                            realiza una pregunta como si fueras un cliente
+                            del vivero.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="demo-preview">
+
+                    <div class="preview-header">
+
+                        <div class="preview-status">
+                            <span></span>
+                            Centro de ayuda
+                        </div>
+
+                        <span class="preview-demo">
+                            DEMO
+                        </span>
+
+                    </div>
+
+
+                    <div class="preview-body">
+
+                        <div class="preview-icon">
+                            🌱
+                        </div>
+
+                        <h3>
+                            Vivero — Centro de ayuda
+                        </h3>
+
+                        <p>
+                            ¿En qué podemos ayudarte?
+                        </p>
+
+
+                        <div class="preview-question">
+                            ¿Cuáles son los horarios de atención?
+                        </div>
+
+                        <div class="preview-question">
+                            ¿Hacen domicilios en Medellín?
+                        </div>
+
+                        <div class="preview-question">
+                            ¿Qué información puedo consultar?
+                        </div>
+
+                        <div class="preview-question">
+                            ¿Cuánto cuesta una Cattleya?
+                        </div>
+
+                        <div class="preview-question">
+                            ¿Cuál es la planta más económica?
+                        </div>
+
+
+                        <div class="preview-chat-note">
+
+                            <span>
+                                💬
+                            </span>
+
+                            <p>
+                                Utiliza el chat de Gosto para interactuar
+                                con el asistente.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAQ DE LA DEMOSTRACIÓN
+        ====================================================== -->
+
+        <section class="section section-dark">
+
+            <div class="section-title">
+
+                <p>EJEMPLO</p>
+
+                <h2>
+                    Preguntas que puede atender
+                </h2>
+
+                <span>
+                    La información depende de los datos configurados
+                    para cada negocio.
+                </span>
+
+            </div>
+
+
+            <div class="faq-grid">
+
+                <article class="faq-card">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        ¿Cuáles son los horarios?
+                    </h3>
+
+                    <p>
+                        El centro puede responder utilizando el horario
+                        configurado por el negocio.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        ¿Hacen domicilios en Medellín?
+                    </h3>
+
+                    <p>
+                        En esta demostración, el asistente informa que el vivero
+                        realiza domicilios dentro de Medellín y algunas zonas cercanas.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        ¿Qué productos tienen?
+                    </h3>
+
+                    <p>
+                        El asistente puede consultar el catálogo configurado
+                        para responder sobre productos, precios y disponibilidad.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        ¿Cuánto cuesta un producto?
+                    </h3>
+
+                    <p>
+                        El asistente puede responder con los precios registrados
+                        en el catálogo del negocio.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BENEFICIOS
+        ====================================================== -->
+
+        <section id="beneficios" class="section">
+
+            <div class="section-title">
+
+                <p>VENTAJAS</p>
+
+                <h2>
+                    ¿Qué beneficios ofrece?
+                </h2>
+
+                <span>
+                    Una herramienta pensada para facilitar la atención
+                    y organización de la información.
+                </span>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        01
+                    </span>
+
+                    <h3>
+                        Ahorro de tiempo
+                    </h3>
+
+                    <p>
+                        Reduce la necesidad de responder repetidamente
+                        las mismas preguntas.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        02
+                    </span>
+
+                    <h3>
+                        Atención organizada
+                    </h3>
+
+                    <p>
+                        Centraliza información importante para facilitar
+                        el acceso de los clientes.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        03
+                    </span>
+
+                    <h3>
+                        Respuestas rápidas
+                    </h3>
+
+                    <p>
+                        Facilita la consulta de información frecuente
+                        de manera sencilla.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        04
+                    </span>
+
+                    <h3>
+                        Personalización
+                    </h3>
+
+                    <p>
+                        El contenido se adapta a la información y
+                        necesidades de cada negocio.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        05
+                    </span>
+
+                    <h3>
+                        Acceso desde navegador
+                    </h3>
+
+                    <p>
+                        Los clientes pueden acceder al centro de ayuda
+                        desde un dispositivo con conexión a internet.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span class="benefit-icon">
+                        06
+                    </span>
+
+                    <h3>
+                        Soporte remoto
+                    </h3>
+
+                    <p>
+                        Si el centro presenta un inconveniente, NEXORA
+                        puede brindar asistencia en línea según el servicio
+                        contratado.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PLANES
+        ====================================================== -->
+
+        <section id="planes" class="section section-light">
+
+            <div class="section-title">
+
+                <p>MODALIDADES</p>
+
+                <h2>
+                    Opciones de servicio
+                </h2>
+
+                <span>
+                    Los valores definitivos se establecerán después
+                    de realizar el cálculo de costos del proyecto.
+                </span>
+
+            </div>
+
+
+            <div class="plans-grid">
+
+                <article class="plan-card">
+
+                    <div class="plan-header">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Creación
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Desarrollo de un centro de ayuda virtual
+                        personalizado para el negocio.
+                    </p>
+
+                    <div class="plan-price">
+                        Por definir
+                    </div>
+
+                    <ul>
+
+                        <li>✓ Diseño y configuración</li>
+                        <li>✓ Carga inicial de información</li>
+                        <li>✓ Implementación</li>
+
+                    </ul>
+
+                    <a href="#contacto" class="btn btn-dark">
+                        Solicitar información
+                    </a>
+
+                </article>
+
+
+                <article class="plan-card plan-featured">
+
+                    <div class="plan-badge">
+                        OPCIÓN COMPLETA
+                    </div>
+
+                    <div class="plan-header">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Creación + primer mes
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Desarrollo del centro y acompañamiento y
+                        mantenimiento durante el primer mes.
+                    </p>
+
+                    <div class="plan-price">
+                        Por definir
+                    </div>
+
+                    <ul>
+
+                        <li>✓ Creación del centro</li>
+                        <li>✓ Configuración inicial</li>
+                        <li>✓ Acompañamiento</li>
+                        <li>✓ Mantenimiento primer mes</li>
+
+                    </ul>
+
+                    <a href="#contacto" class="btn btn-dark">
+                        Solicitar información
+                    </a>
+
+                </article>
+
+
+                <article class="plan-card">
+
+                    <div class="plan-header">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Mantenimiento
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Actualización y mantenimiento de la información
+                        del centro de ayuda.
+                    </p>
+
+                    <div class="plan-price">
+                        Por definir
+                    </div>
+
+                    <ul>
+
+                        <li>✓ Actualización de información</li>
+                        <li>✓ Cambios solicitados</li>
+                        <li>✓ Soporte remoto</li>
+
+                    </ul>
+
+                    <a href="#contacto" class="btn btn-dark">
+                        Solicitar información
+                    </a>
+
+                </article>
+
+            </div>
+
+            <div class="price-note">
+
+                <strong>
+                    Importante:
+                </strong>
+
+                Los precios serán definidos después de calcular los
+                costos de materiales, mano de obra, costos indirectos
+                y demás elementos establecidos para el proyecto.
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SOBRE LA DEMOSTRACIÓN
+        ====================================================== -->
+
+        <section class="section presentation-section">
+
+            <div class="presentation-content">
+
+                <div>
+
+                    <p class="section-mini-title">
+                        PARA NUESTRO PROYECTO
+                    </p>
+
+                    <h2>
+                        Una demostración de lo que NEXORA puede ofrecer.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    El vivero presentado es un negocio ficticio que permite mostrar cómo Nexora implementa un centro de ayuda personalizado para un cliente real.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACTO
+        ====================================================== -->
+
+        <section id="contacto" class="section contact-section">
+
+            <div class="section-title">
+
+                <p>HABLEMOS</p>
+
+                <h2>
+                    ¿Quieres implementar un centro de ayuda?
+                </h2>
+
+                <span>
+                    Cuéntanos sobre tu negocio y conoce nuestra propuesta.
+                </span>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <span class="contact-label">
+                        NEXORA
+                    </span>
+
+                    <h3>
+                        Lleva la atención de tu negocio
+                        a un espacio digital.
+                    </h3>
+
+                    <p>
+                        Creamos soluciones personalizadas para ayudar
+                        a pequeños negocios y emprendimientos a organizar
+                        y facilitar la atención de sus clientes.
+                    </p>
+
+
+                    <div class="contact-feature">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <p>
+                            Centro personalizado
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-feature">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <p>
+                            Información organizada
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-feature">
+
+                        <span>
+                            ✓
+                        </span>
+
+                        <p>
+                            Soporte y mantenimiento según modalidad
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" action="#" method="post">
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="negocio">
+                            Empresa o negocio
+                        </label>
+
+                        <input
+                            type="text"
+                            id="negocio"
+                            name="negocio"
+                            placeholder="Nombre del negocio"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="correo@ejemplo.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="servicio">
+                            Servicio de interés
+                        </label>
+
+                        <select id="servicio" name="servicio">
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="creacion">
+                                Creación del centro
+                            </option>
+
+                            <option value="mantenimiento">
+                                Mantenimiento
+                            </option>
+
+                            <option value="completo">
+                                Creación + primer mes
+                            </option>
+
+                            <option value="informacion">
+                                Quiero más información
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mensaje">
+                            Cuéntanos qué necesitas
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribe tu mensaje..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-button"
+                    >
+                        Enviar solicitud
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    HELP<span>PLANT</span>
+                </div>
+
+                <p>
+                    Centros de ayuda virtuales para pequeños negocios
+                    y emprendimientos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Navegación
+                </h3>
+
+                <a href="#centro-ayuda">
+                    Inicio
+                </a>
+
+                <a href="#nexora">
+                    Nosotros
+                </a>
+
+                <a href="#servicios">
+                    Servicios
+                </a>
+
+                <a href="#demo">
+                    Demostración
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Servicio
+                </h3>
+
+                <a href="#funciona">
+                    Cómo funciona
+                </a>
+
+                <a href="#beneficios">
+                    Beneficios
+                </a>
+
+                <a href="#planes">
+                    Modalidades
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Proyecto
+                </h3>
+
+                <p>
+                    Propuesta tecnológica para la creación e implementación
+                    de centros de ayuda virtuales.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Nexora. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Proyecto académico — SENA
+            </p>
+
+        </div>
+
+    </footer>
+
+
+   <!-- =====================================================
+     AGENTE GOSTO
+     Centro de ayuda virtual de demostración
+====================================================== -->
+
+<script
+    src="https://www.gosto.ai/embed.js"
+    data-agent="571dfd6c-f480-4a2c-b2cf-649f34c1a105"
+    async>
+</script>
+
+    <!-- =====================================================
+         JAVASCRIPT BÁSICO DEL MENÚ
+    ====================================================== -->
+
+    <script>
+
+        const helpSearch = document.getElementById("helpSearch");
+        const faqCards = [...document.querySelectorAll(".customer-faq-card")];
+        const faqSearchResults = document.getElementById("faqSearchResults");
+        if (helpSearch && faqSearchResults) {
+            const filterHelp = () => {
+                const term = helpSearch.value.trim().toLocaleLowerCase("es");
+                let visible = 0;
+                faqCards.forEach(card => {
+                    const matches = !term || card.textContent.toLocaleLowerCase("es").includes(term);
+                    card.hidden = !matches;
+                    if (matches) visible++;
+                });
+                faqSearchResults.textContent = term && visible === 0
+                    ? "No encontramos coincidencias en las preguntas frecuentes. Prueba con otra palabra o consulta al asistente virtual."
+                    : (term ? `${visible} resultado(s) encontrado(s).` : "");
+                document.getElementById("preguntas")?.scrollIntoView({behavior:"smooth", block:"start"});
+            };
+            helpSearch.addEventListener("keydown", event => {
+                if (event.key === "Enter") { event.preventDefault(); filterHelp(); }
+            });
+            document.querySelector(".customer-search a")?.addEventListener("click", event => {
+                event.preventDefault(); filterHelp();
+            });
+        }
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuToggle && navLinks) {
+
+            menuToggle.addEventListener("click", () => {
+
+                navLinks.classList.toggle("active");
+
+            });
+
+
+            const links = navLinks.querySelectorAll("a");
+
+            links.forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    navLinks.classList.remove("active");
+
+                });
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
